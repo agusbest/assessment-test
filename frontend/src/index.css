@@ -1,0 +1,192 @@
+@import "tailwindcss";
+
+:root {
+    font-family: "Inter", "Segoe UI", sans-serif;
+    color: #1e293b;
+    background: #eef2f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    background: #eef2f7;
+    color: #1e293b;
+}
+
+input,
+select,
+button {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.page-container {
+    @apply min-h-screen pt-5 pb-6 px-6;
+}
+
+.content-wrapper {
+    @apply max-w-4xl mx-auto;
+}
+
+.page-header {
+     @apply text-center mb-5;
+}
+
+.page-title {
+    @apply text-[2.3rem] font-bold text-slate-900;
+}
+
+.page-subtitle {
+    @apply mt-2 text-slate-500;
+}
+
+.card {
+    @apply bg-white rounded-2xl shadow-xl border border-slate-200;
+}
+
+.card-body {
+    @apply px-8 py-6;
+}
+
+.card-header {
+     @apply border-b border-slate-200 pb-4 mb-5;
+}
+
+.card-title {
+     @apply text-[2rem] font-bold text-slate-900;
+}
+
+.card-subtitle {
+     @apply mt-1 text-[15px] text-slate-500;
+}
+
+.form-grid {
+     @apply grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3;
+}
+
+.form-group {
+     @apply flex flex-col gap-2;
+}
+
+.form-label {
+    @apply text-xs uppercase tracking-wider font-semibold text-slate-700;
+}
+
+.form-control {
+    @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-2 text-base;
+}
+
+.form-control:focus {
+    @apply outline-none ring-2 ring-blue-500 border-blue-500;
+}
+
+.button-group {
+    @apply flex gap-4 mt-4;
+}
+
+.btn-primary {
+    @apply bg-slate-900 text-white font-semibold rounded-lg px-8 py-2.5 hover:bg-slate-800 transition;
+}
+
+.btn-secondary {
+    @apply bg-white border border-slate-300 font-semibold rounded-lg px-8 py-2.5 hover:bg-slate-100 transition;
+}
+
+.alert-success {
+    @apply mb-6 rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-green-700;
+}
+
+.alert-error {
+    @apply mb-6 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-red-700;
+}
+
+/* RESULT */
+
+.result-card {
+    @apply mt-8 bg-white rounded-2xl border border-slate-200 shadow-lg overflow-hidden;
+}
+
+.result-header {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 p-6 border-b border-slate-200;
+}
+
+.result-title {
+    @apply text-xs uppercase tracking-[0.18em] text-slate-500 mb-2;
+}
+
+.result-name {
+    @apply text-2xl font-bold text-slate-900;
+}
+
+.result-text {
+    @apply text-base text-slate-700;
+}
+
+.result-seat-section {
+    @apply p-6;
+}
+
+.result-seat-grid {
+    @apply grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4;
+}
+
+.result-seat-card {
+    @apply bg-white border border-slate-300 rounded-xl text-center py-6 shadow-sm;
+}
+
+.result-seat-number {
+    @apply text-4xl font-bold text-slate-900;
+}
+
+.result-seat-caption {
+    @apply mt-2 text-sm text-slate-500;
+}
+
+@media (max-width: 768px) {
+
+    .card-body {
+        @apply p-6;
+    }
+
+    .page-title {
+        @apply text-3xl;
+    }
+
+    .card-title {
+        @apply text-2xl;
+    }
+
+    .button-group {
+        @apply flex-col;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        @apply w-full;
+    }
+
+    .result-header {
+        @apply p-6;
+    }
+
+    .result-seat-section {
+        @apply p-6;
+    }
+
+    .result-seat-number {
+        @apply text-4xl;
+    }
+}
