@@ -309,20 +309,20 @@ php artisan test
 
 ## Voucher Form
 
-![alt text](form.png)
+![Voucher Form](images/form.png)
 
 ```
-image/form.png
+images/form.png
 ```
 
 ---
 
 ## Generated Voucher
 
-![alt text](result.png)
+![Generated Seats](images/result.png)
 
 ```
-image/result.png
+images/result.png
 ```
 
 ---
