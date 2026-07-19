@@ -41,7 +41,7 @@ The application prevents duplicate voucher generation for the same flight number
 # Project Structure
 
 ```
-skill-test/
+assessment-test/
 ├── backend/
 │   ├── app/
 │   │   ├── Http/
